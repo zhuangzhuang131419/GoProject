@@ -27,13 +27,6 @@ func ReadCsv(fileName string) bool {
 	for i := 0; i < sz; i++ {
 		// fmt.Println(ss[i])
 		// fmt.Println(ss[i][0]) //  key的数据  可以作为map的数据的值
-
-
-		if ss[i][4] == "未完成体验课" || ss[i][5] == "没有购买阅读力500" || ss[i][6] == "没有购买写作500" {
-			if _, ok := nameMap[ss[i][0]]; !ok {
-				nameMap[ss[i][1]] = ss[i]
-			}
-		}
 	}
 
 
@@ -66,5 +59,5 @@ func ReadCsv(fileName string) bool {
 }
 
 func main() {
-	ReadCsv("木木班分布.csv")
+
 }
