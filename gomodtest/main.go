@@ -1,11 +1,5 @@
-package main
-
-import (
-	"fmt"
-
-	"rsc.io/quote"
-)
+package gomodtest
 
 func main() {
-	fmt.Println(quote.Hello())
+	//fmt.Println(quote.Hello())
 }

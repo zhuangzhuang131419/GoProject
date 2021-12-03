@@ -59,5 +59,11 @@ func ReadCsv(fileName string) bool {
 }
 
 func main() {
+	var a interface{}
+	a = 1
+	val, ok := a.(string)
+	fmt.Println(ok)
+	fmt.Println(val)
 
+	//fmt.Println(strings.Replace("12345 67", " ", "", -1))
 }
